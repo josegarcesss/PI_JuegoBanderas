@@ -1,0 +1,75 @@
+body {
+    background-image: url('https://wallpaperswide.com/download/mountain_beneath_the_starry_sky-wallpaper-1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 650px;
+    text-align: center;
+}
+
+h1 {
+    color: darkslategray;
+    margin-bottom: 30px;
+}
+
+.formularioJugador {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+
+#nameError {
+    color: orangered;
+    text-shadow: black 1px 1px 1px;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.btnRanking {
+    background-color: firebrick;
+    margin-top: 20px;
+}

@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juego de Países</title>
+    <link rel="stylesheet" href="css\styleIndex.css">
+    <script src="js\app.js" defer></script>
 </head>
 <body>
-    
+    <main class="container">
+        <h1>Juego de Países</h1>
+        <form id="playerForm">
+            <div class="classPlayerForm">
+                <label>Nombre del Jugador:</label>
+                <input type="text" id="playerName"></imput>
+                <div id="nameError"></div>
+            </div>     
+            <button type="submit">Comenzar Juego</button>
+        </form>      
+        <button id="rankingBtn" class="btnRanking">Ranking</button>
+        <article id="top20">
+            <ol id="topList">
+                
+            </ol>
+        </article>
+    </main>
 </body>
 </html>
