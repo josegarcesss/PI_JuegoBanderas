@@ -1,11 +1,27 @@
 const axios = require('axios');
 const express = require('express');
+const { generarPregunta } = require('./preguntas');
+
 const app = express();
 const port = process.env.PORT || 3000;
 
+//generar y devolver una pregunta aleatoria
+app.get('/api/pregunta', async (req, res) => {
+  try {
+      const respuesta = await axios.get('https://restcountries.com/v3.1/all');
+      const paises = respuesta.data;
+      const pregunta = await generarPregunta(paises);
+      res.json(pregunta);
+  } catch (error) {
+      console.error('Error al cargar los países:', error);
+  }
+});
+
+
+/* 
 let paisAleatorio = {};
 
-/* Función para obtener información necesaria de un país seleccionado aleatoriamente */
+// Función para obtener información necesaria de un país seleccionado aleatoriamente
 async function getCountryRamdom() {
   try {
     const response = await axios.get('https://restcountries.com/v3.1/all');
@@ -41,9 +57,9 @@ app.get('/pais-aleatorio', async (req, res) => {
   }
 });
 
-
+*/
 
 
 app.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}`);
+  console.log('Servidor funcionando en el puerto', port);
 });
