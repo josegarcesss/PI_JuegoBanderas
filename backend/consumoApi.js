@@ -15,7 +15,7 @@ fetch('https://serverpi-xamu.onrender.com/pais-aleatorio')
 
 async function probandoGetPregunta() { 
     try {
-        const res = await axios.get('https://serverpi-xamu.onrender.com/pregunta');
+        const res = await axios.get('https://serverpi-xamu.onrender.com/api/pregunta');
         console.log('JSON de la Consigna y su respuesta', res.data);
     } catch (error) {
         console.error('Error al realizar la pregunta:', error.message);

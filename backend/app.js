@@ -3,7 +3,7 @@ const express = require('express');
 const { generarPregunta } = require('./preguntas');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 //generar y devolver una pregunta aleatoria
 app.get('/api/pregunta', async (req, res) => {
@@ -60,6 +60,6 @@ app.get('/pais-aleatorio', async (req, res) => {
 */
 
 
-app.listen(port, () => {
-  console.log('Servidor funcionando en el puerto', port);
+app.listen (PORT, () => {
+  console.log('Servidor funcionando en el puerto', PORT);
 });
