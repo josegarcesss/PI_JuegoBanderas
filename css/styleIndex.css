@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(0, 43, 80, 0.5);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -23,8 +23,9 @@ body {
 }
 
 h1 {
-    color: darkslategray;
+    color: gold;
     margin-bottom: 30px;
+    text-shadow: black 1px 1px;
 }
 
 .formularioJugador {
@@ -36,7 +37,8 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: midnightblue;
+    color: azure;
+    text-shadow: black 2px 2px;
 }
 
 input {

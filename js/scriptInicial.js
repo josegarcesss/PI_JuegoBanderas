@@ -17,7 +17,7 @@ playerForm.addEventListener('submit', (event) => {
     alert(`${playerName} Nombre Válido, Buena Suerte!`);
 });
 
-// Evento para el botón de ranking
+// Proximamente se mostrara el ranking de los mejores 20 jugadores
 rankingBtn.addEventListener('click', () => {
     alert('Mostrando ranking de los mejores 20 jugadores');
     

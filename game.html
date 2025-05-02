@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTERFAZ DEL JUEGO</title>
+    <link rel="stylesheet" href="css\styleGame.css">
+    <title>JUEGO DE BANDERAS</title>
 </head>
 <body>
     <header>
-
+        <h1>INTERFAZ DEL JUEGO</h1>
+        <button id="btnContinuar">Siguiente Pregunta</button>
     </header>
     <main>
+        <section id="gameContainer">
+        <h2 id="consigna" class="itemGame">AQUI VA LA CONSIGNA Y SU VALOR</h2>
+        <ul id="opciones" class="opciones itemGame">
+            <li id="op1" class="opciones itemGame">OPCION 1</li>
+            <li id="op2" class="opciones itemGame">OPCION 2</li>
+            <li id="op3" class="opciones itemGame">OPCION 3</li>
+            <li id="op4" class="opciones itemGame">OPCION 4</li>
+        </ul>
+    </section>
+            <div id="resultadoCorrecto">AQUI VA EL RESULTADO CORRECTO</div>
+        <section id="infoGameContainer" class="infoGame">
+            <h2 id="puntos" class="infoGame">Puntos: 0</h2>
+            <h2 id="tiempo" class="infoGame">Tiempo: 0</h2>
+            <h2 id="nivel-texto" class="infoGame">Pregunta 1/10</h2>
+        </section>
         
     </main>
     
