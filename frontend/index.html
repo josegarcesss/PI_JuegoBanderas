@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Juego de Banderas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Juego de Preguntas sobre Países</h1>
+    </header>
+    <main>
+        <article id="instrucciones">
+            <h2>Instrucciones del Juego</h2>
+            <p>¡Bienvenido al juego de preguntas sobre países! Responde correctamente a las preguntas para ganar puntos.</p>
+            
+        </article>
+        
+        <form id="playerForm">
+            <label>Nombre del Jugador:</label>
+            <input type="text" id="playerName">
+            <div id="nameError"></div>
+            <button type="submit">Comenzar Juego</button>
+        </form>
+        
+        <section id="game" class="hidden">
+            <div id="game-container"></div>
+        </section>
+
+        <section id="endGame" class="hidden">
+            <h2>Fin del Juego</h2>
+            <div id="result-container"></div>
+        </section>
+        
+        <section id="ranking" class="hidden">
+            <h2>Top 20 Mejores Puntajes</h2>
+            <div id="rankingList"></div>
+            <button id="rankingBtn">Ver Ranking</button>  
+        </section>
+        
+        <button id="reiniciarBtn">Reiniciar Juego</button>
+    </main>
+    <footer>
+        <p>Repositorio de <a href="https://github.com/josegarcesss/PI_JuegoBanderas.git">Github</a></p>
+        <p>Foto de <a href="https://unsplash.com/es/@vorosbenisop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Benjamin Voros</a> en <a href="https://unsplash.com/es/fotos/montana-nevada-bajo-las-estrellas-phIFdC6lA4E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </footer>
+</body>
+</html>

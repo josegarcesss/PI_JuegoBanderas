@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "nombre": "Carlos",
+        "puntaje": 45,
+        "correctas": 10,
+        "incorrectas": 0,
+        "tiempoTotal": "60.3",
+        "promedio": "6.0"
+      },
+    {
+        "nombre": "Ana",
+        "puntaje": 50,
+        "correctas": 10,
+        "incorrectas": 0,
+        "tiempoTotal": "55.2",
+        "promedio": "6.5"
+      },
+    {
+        "nombre": "Luis",
+        "puntaje": 40,
+        "correctas": 8,
+        "incorrectas": 2,
+        "tiempoTotal": "70.1",
+        "promedio": "5.0"
+      }
+]

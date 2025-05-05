@@ -15,6 +15,7 @@ app.get('/api/pregunta', async (req, res) => {
       res.json(pregunta);
   } catch (error) {
       console.error('Error al cargar los países:', error);
+      res.status(500).json({ error: 'No se pudieron obtener los paises' });
   }
 });
 
@@ -44,6 +45,6 @@ app.get('/api/ranking', (req, res) => {
 
 
 
-app.listen (PORT, () => {
+app.listen(PORT, () => {
   console.log('Servidor funcionando en el puerto', PORT);
 });
