@@ -8,14 +8,21 @@ const gameContainer = document.getElementById('game-container');
 const resultContainer = document.getElementById('result-container');
 const endGame = document.getElementById('endGame');
 const rankingList = document.getElementById('rankingList');
+let preguntaActual = null;
+let numeroPregunta = 0;
+const totalPreguntas = 10;
+rankingBtn.addEventListener('click', mostrarRanking);
+reiniciarBtn.addEventListener('click', reiniciarJuego);
 
+// objeto para almacenar el resultado del usuario
 let resultadoUsuario = {
     nombre: "X",
     puntaje: 0,
     correctas: 0,
     incorrectas: 0,
     tiempoTotal: 0,
-    promedio: 0
+    promedio: 0,
+    inicioTiempo: null
 };
 
 // Validación del nombre del Jugador
@@ -30,11 +37,6 @@ playerForm.addEventListener('submit', (event) => {
     } else {
         nameError.style.display = 'none';
         resultadoUsuario.nombre = playerName;
-        resultadoUsuario.puntaje = 0;
-        resultadoUsuario.correctas = 0;
-        resultadoUsuario.incorrectas = 0;
-        resultadoUsuario.tiempoTotal = 0;
-        resultadoUsuario.promedio = 0;
         resultadoUsuario.inicioTiempo = new Date();
         
         playerForm.classList.add("hidden");
@@ -75,7 +77,7 @@ async function siguientePregunta() {
         const respuesta = await fetch("/api/pregunta");
         preguntaActual = await respuesta.json();
         numeroPregunta++;
-
+        
         gameContainer.innerHTML = `
             <h3>Pregunta #${numeroPregunta}</h3>
             <p>${preguntaActual.texto}</p>
@@ -149,7 +151,7 @@ async function mostrarRanking() {
             ranking.forEach((entrada, i) => {
                 rankingList.innerHTML += `
                     <p>#${i + 1} - 
-                        Nombre: ${entrada.nombre || 'Anónimo'} | 
+                        Nombre: ${entrada.nombre || 'X'} | 
                         Puntaje: ${entrada.puntaje} | 
                         Tiempo: ${entrada.tiempoTotal}s
                     </p>`;
