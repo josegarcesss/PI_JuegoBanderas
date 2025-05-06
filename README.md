@@ -6,6 +6,12 @@ Un juego donde debes responder preguntas sobre países para ganar puntos y ser e
 
 ---
 
+## 🎥 Video Explicativo del Juego
+
+Video subido a la plataforma de 🤩Youtube ➡️➡️ [VER VIDEO](https://youtu.be/cloO2gFf1bI) ⬅️⬅️
+
+---
+
 ## 🕹️ ¿Cómo jugar?
 
 1. Ingresa tu nombre al inicio.
@@ -20,7 +26,7 @@ Un juego donde debes responder preguntas sobre países para ganar puntos y ser e
 
 >[!IMPORTANT]
 >## ⬇️⬇️ Juega online ⬇️⬇️
->[JUGAR AHORA](https://serverrender-rmqk.onrender.com)
+>➡️➡️ [JUGAR AHORA](https://serverrender-rmqk.onrender.com) ⬅️⬅️
 
 >[!WARNING]
 >Por limitaciones del servidor el ranking se almacenará solo temporalmente!
