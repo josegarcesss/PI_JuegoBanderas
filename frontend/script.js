@@ -105,7 +105,7 @@ async function siguientePregunta() {
 
 // Verificar respuesta y actualizar puntaje
 function verificar(seleccionada) {
-    const acierto = seleccionada === preguntaActual.respuesta;
+    const acierto = seleccionada == preguntaActual.respuesta;
     if (acierto) {
         resultadoUsuario.correctas++;
         resultadoUsuario.puntaje += preguntaActual.puntos;
