@@ -53,6 +53,15 @@ playerForm.addEventListener("submit", (event) => {
     }
 });
 
+document.getElementById("instruccionesBtn").addEventListener("click", () => {
+    const instrucciones = document.getElementById("instrucciones");
+    if (instrucciones.classList.contains("hidden")) {
+        instrucciones.classList.remove("hidden");
+    } else {
+        instrucciones.classList.add("hidden");
+    }
+});
+
 // Reiniciar el juego
 function reiniciarJuego() {
     resultadoUsuario = {

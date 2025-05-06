@@ -9,16 +9,24 @@
     <body>
         <header>
             <h1 id="titulo">Juego de Preguntas sobre Países</h1>
-        </header>
-        <main>
-            <article id="instrucciones">
-                <h2>Instrucciones del Juego</h2>
+            <button id="instruccionesBtn">Instrucciones</button>
+            <article id="instrucciones" class="hidden">
+                <p>Responde correctamente a las preguntas para ganar puntos.</p>
                 <p>
-                    ¡Bienvenido al juego de preguntas sobre países! Responde
-                    correctamente a las preguntas para ganar puntos.
+                    Hay 3 tipos de pregunta, cada pregunta tiene un valor
+                    diferente.
+                </p>
+                <p>
+                    > ¿Cual es el país de la siguiente ciudad capital? (3
+                    puntos)<br />
+                    > ¿Qué pais está representado por esta Bandera? (5
+                    puntos)<br />
+                    > ¿Cuantos países limítrofes tiene el siguiente país? (3
+                    puntos)
                 </p>
             </article>
-
+        </header>
+        <main>
             <form id="playerForm">
                 <label>Nombre del Jugador:</label>
                 <input type="text" id="playerName" />
